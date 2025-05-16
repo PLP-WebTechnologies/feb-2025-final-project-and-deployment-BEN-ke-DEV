@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* font family doto */
+/* font family space grotesk */
+
+/* root stylying */
+:root{
+    --dark-color: rgb (4, 8, 15);
+    --secondary-color: rgb (80, 125, 188);
+    --primary-color: rgb (161, 198, 234);
+    --secndary-color: rgb (187, 209, 234);
+    --border-color: rgb (218, 227, 229)
+    --background-color: rgb (255, 255, 255);
+}
+body {
+    font-family: 'Doto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration : none;
+}
+
+*>* {
+    box-sizing: border-box;
+}
+
+
+/* global styling */
+.text-dark {
+    color: var(--dark-color);
+}
+.text-secondary {
+    color: var(--secondary-color);
+}
+.text-primary {
+    color: var(--primary-color);
+}
+.text-secndary {
+    color: var(--secndary-color);
+}
+.text-border {
+    color: var(--border-color);
+}
+.bg-light {
+    color: var(--background-color);
+}
+/* section styling */
+/* ------ */
