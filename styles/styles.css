@@ -5,12 +5,12 @@
 
 /* root stylying */
 :root{
-    --dark-color: rgb (4, 8, 15);
-    --secondary-color: rgb (80, 125, 188);
-    --primary-color: rgb (161, 198, 234);
-    --secndary-color: rgb (187, 209, 234);
-    --border-color: rgb (218, 227, 229)
-    --background-color: rgb (255, 255, 255);
+    --dark-color: #04080F;
+    --secondary-color: #507DBC;
+    --primary-color: #a1c6ea;
+    --secndary-color: #BBD1EA;
+    --border-color: #dae3e5;
+    --background-color: #ffffff;
 }
 body {
     font-family: 'Doto', sans-serif;
@@ -45,5 +45,93 @@ a {
 .bg-light {
     color: var(--background-color);
 }
+
+.container{
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
 /* section styling */
-/* ------ */
+/* ---navba menu--- */
+.navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--border-color);
+}
+.navbar-brand{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--dark-color);
+    align-self: center;
+}
+.collapse{
+    align-self: center;
+}
+
+.navlinks{
+    font-size: 20px;
+    margin: 12px;
+    color: var(--dark-color);
+    font-family: 'Space Grotesk', sans-serif;
+} 
+
+.navlinks:hover{
+    color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.search-box{
+    display: inline;
+    border-right: 1px solid var(--dark-color);
+    padding-right: 10px;
+    margin-right: 10px;
+
+}
+
+.toggle-button{
+    font-size: 21px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    margin: 0px 10px;
+    display: none;
+}
+
+
+/* media queries */
+
+@media(max-width:900px){
+    .navbar{
+        flex-direction: column;
+
+    } 
+    .collapse{
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-in;
+    }
+}
+
+@media(max-width:574px){
+    .toggle-button{
+        display: initial;
+    }
+    .collapse .navlinks{
+        display: block;
+        text-align: center;
+    }
+    .search-box{
+        border-right: none;
+    }
+    .collapse-toggle{
+        max-height: 500px;
+    }
+}
